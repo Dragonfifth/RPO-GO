@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monaco', monospace;
+    font-size: 105%;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #110727, #392074);
+    padding: 10px;
+}
+.header{
+    width: 100%;
+    height: min(800px, 90%);
+    background:#271550;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px #4a288f inset;
+}
+.header h2 img{
+    width: min(50px, 20%);
+    height: auto;
+    min-width: 120px;
+    text-shadow: 2px 2px 5px #000000;
+    cursor: pointer;
+    padding: 10px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+button.sign-up{
+    border: none;
+    color: #e1dee7;
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Monaco', monospace;
+    font-size: 0.5cm;
+    box-shadow: 0px 0px 15px #4a288f;
+}
+button.sign-up:hover{
+    box-shadow: 0px 0px 15px #562fa3;
+}
+button.login{
+    border: none;
+    color: #e1dee7;
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Monaco', monospace;
+    font-size: 0.5cm;
+    box-shadow: 0px 0px 15px #4a288f;
+}
+button.login:hover{
+    box-shadow: 0px 0px 15px #562fa3;
+}
+.bars{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'Monaco', monospace;
+    text-shadow: 0px 0px 15px #9b6aff;
+}
+button.bars:hover{
+    text-shadow: 0px 0px 15px #ceb5ff;
+}
+.blog{
+    width: 80%;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.842);
+    outline: rgba(141, 141, 141, 0.39) solid 2px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    padding: 20px;
+    color: #000000;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+::-webkit-scrollbar-track{
+    background: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background: #110727;
+}
