@@ -9,24 +9,24 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(0deg, #110727, #392074);
+    background: linear-gradient(0deg, #1c0430, #521a9b);
     padding: 10px;
 }
 .header{
     width: 100%;
     height: min(800px, 90%);
-    background:#271550;
+    background:#5b24a3;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 20px #4a288f inset;
+    box-shadow: 0px 0px 20px #6539be inset;
 }
 .header h2 img{
     width: min(50px, 20%);
     height: auto;
     min-width: 120px;
-    text-shadow: 2px 2px 5px #000000;
+    text-shadow: 0px 0px 10px #4a288f;
     cursor: pointer;
     padding: 10px;
 }
@@ -40,30 +40,30 @@
 button.sign-up{
     border: none;
     color: #e1dee7;
-    background: none;
+    background: #5b24a3;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 0.5cm;
-    box-shadow: 0px 0px 15px #4a288f;
+    box-shadow: 0px 0px 15px #47268a;
 }
 button.sign-up:hover{
-    box-shadow: 0px 0px 15px #562fa3;
+    box-shadow: 0px 0px 15px #3c1f75 inset;
 }
 button.login{
     border: none;
     color: #e1dee7;
-    background: none;
+    background: #5b24a3;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 0.5cm;
-    box-shadow: 0px 0px 15px #4a288f;
+    box-shadow: 0px 0px 15px #47268a;
 }
 button.login:hover{
-    box-shadow: 0px 0px 15px #562fa3;
+    box-shadow: 0px 0px 15px #3c1f75 inset;
 }
 .bars{
     border: none;
@@ -76,26 +76,55 @@ button.login:hover{
 button.bars:hover{
     text-shadow: 0px 0px 15px #ceb5ff;
 }
-.blog{
-    width: 80%;
-    height: 800px;
-    background-color: rgba(255, 255, 255, 0.842);
-    outline: rgba(141, 141, 141, 0.39) solid 2px;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
+.off-screen-menu{
+    background-color: #5b24a3;
+    box-shadow: 0px 0px 20px #6539be inset;
+    color: #e1dee7;
+    height: auto;
+    width: min(auto, 30%);
+    max-width: 450px;
+    position: fixed;
+    top: min(100px);
+    right: -450px;
     display: flex;
-    justify-content: left;
-    align-items: top;
-    padding: 20px;
-    color: #000000;
-    margin-top: 2.5%;
-    margin-left: 10%;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow: auto;
+    flex-direction: column;
+    justify-content: top;
+    padding: 50px;
+    align-items: left;
+    text-align: left;
+    font-size: auto;
+    transition: .3s ease;
+    border-radius: 30px;
+}
+.off-screen-menu button{
+    background: #5b24a3;
+    outline: none;
+    border: none;
+    color: #e1dee7;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #47268a;
+    border-radius: 10px;
+    padding:10px;
+}
+.off-screen-menu button:hover{
+    box-shadow: 0px 0px 15px #3c1f75 inset;
+}
+.off-screen-menu ul{
+    padding: 0;
+    margin: 0;
+}
+.off-screen-menu li{
+    margin-bottom: 10px
+}
+.off-screen-menu li:last-child{
+    margin-bottom: 0;
+}
+.off-screen-menu.active{
+    right: 15px;
+    padding: 30px;
 }
 ::-webkit-scrollbar{
-    width: 1px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
     background: #000000;
